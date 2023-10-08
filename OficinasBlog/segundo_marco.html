@@ -86,9 +86,10 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-md-10 col-lg-8 col-xl-7">
             <div class="post-heading">
-              <h1>Segundo Marco - Estrutura Mecânica.</h1>
+              <h1>Segundo Marco - Estrutura Mecânica e Testes de Hardware.</h1>
               <h2 class="subheading">
-                Desenvolvimento mecânico da base para o telescópio.
+                Desenvolvimento mecânico da base para o telescópio e testes dos
+                motores.
               </h2>
             </div>
           </div>
@@ -100,6 +101,7 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-md-10 col-lg-8 col-xl-7">
+            <h2>Estrutura Mecânica</h2>
             <p>
               A montagem Dobsoniana é uma maneira especial de suportar
               telescópios para observar o céu. Ela foi criada por John Dobson
@@ -152,7 +154,35 @@
               <img class="img-fluid" src="assets/img/post2img8.jpg" />
             </div>
             <span class="caption text-muted">Montagem</span>
-          </div>
+            <h2>Testes de Hardware</h2>
+            <p>
+              Para realizar a movimentação do telescópio foram utilizados dois
+              motores NEMA 17, o ângulo de passo do motor é de 1,8 graus, ou
+              seja, para que o motor realize uma volta completa serão necesários
+              200 passos. Com base nesta lógica foi desenvolvido o código em
+              micropython para que o motor realizasse uma rotação de X graus. O
+              vídeo abaixo apresenta uma demonstraçao com uma rotação de 90º,
+              45º e 180º para melhor visualização.
+            </p>
+            <div style="display: flex; justify-content: center">
+              <img
+                class="img-fluid"
+                src="assets/img/motor.gif"
+                alt="GIF Animado"
+              />
+            </div>
+            <span class="caption text-muted"
+              >Movimentação do motor em 90º, 45º e 180º</span
+            >
+            <div style="display: flex; justify-content: center">
+              <img
+                class="img-fluid"
+                src="assets/img/testeMotorCodigo.jpg"
+              />
+              </div>
+            <span class="caption text-muted"
+              >Código utilizados para o teste</span
+            >
         </div>
       </div>
     </article>
