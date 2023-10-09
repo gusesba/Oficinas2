@@ -156,13 +156,12 @@
             <span class="caption text-muted">Montagem</span>
             <h2>Testes de Hardware</h2>
             <p>
-              Para realizar a movimentação do telescópio foram utilizados dois
-              motores NEMA 17, o ângulo de passo do motor é de 1,8 graus, ou
-              seja, para que o motor realize uma volta completa serão necesários
-              200 passos. Com base nesta lógica foi desenvolvido o código em
-              micropython para que o motor realizasse uma rotação de X graus. O
-              vídeo abaixo apresenta uma demonstraçao com uma rotação de 90º,
-              45º e 180º para melhor visualização.
+              Para realizar a movimentação do telescópio foram utilizados dois motores NEMA 17,
+              o ângulo de passo do motor é de 1,8 graus, ou seja, para que o motor realize uma
+              volta completa serão necesários 200 passos. Com base nesta lógica foi desenvolvido
+              o código em micropython para que o motor realizasse uma rotação de X graus. O vídeo
+              abaixo apresenta uma demonstraçao com uma rotação de 90º, 45º e 180º para melhor
+              visualização. Também são apresentados o código e o esquemático dos motores.
             </p>
             <div style="display: flex; justify-content: center">
               <img
@@ -182,6 +181,30 @@
               </div>
             <span class="caption text-muted"
               >Código utilizados para o teste</span
+            >
+            <div style="display: flex; justify-content: center">
+              <img
+                class="img-fluid"
+                src="assets/img/sketch.png"
+              />
+              </div>
+            <span class="caption text-muted"
+              >Esquemático dos motores </span
+            >
+            <p>
+              Para a movimentação será utilizado o sistema de coordenadas azimutal. Nesse sistema, a coordenada
+              vertical ao horizonte é a altura e a coordenada paralela ao horizonte é o azimute. O azimute varia
+              entre 0º e 360º no sentido horário. Já a altura varia de -90º (Nadir) e +90º (Zênite), porém como o
+              foco da observação é para objetos acima da linha do horizonte a altura irá variar de 0º até p Zênite.
+            </p>
+             <div style="display: flex; justify-content: center">
+              <img
+                class="img-fluid"
+                src="assets/img/coordenadas.jpg"
+              />
+              </div>
+            <span class="caption text-muted"
+              >Coordenadas</span
             >
         </div>
       </div>
